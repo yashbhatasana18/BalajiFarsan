@@ -412,6 +412,9 @@ export interface ApiProductProduct extends Schema.CollectionType {
     description: Attribute.Blocks;
     price: Attribute.Integer & Attribute.Required;
     quntity: Attribute.Integer & Attribute.Required;
+    madeFrom: Attribute.Enumeration<['Oil', 'Butter']> &
+      Attribute.Required &
+      Attribute.DefaultTo<'Oil'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

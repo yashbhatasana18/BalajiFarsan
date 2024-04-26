@@ -41,6 +41,15 @@
     "quntity": {
       "type": "integer",
       "required": true
+    },
+    "madeFrom": {
+      "type": "enumeration",
+      "enum": [
+        "Oil",
+        "Butter"
+      ],
+      "default": "Oil",
+      "required": true
     }
   }
 }
